@@ -104,9 +104,10 @@ spliced = 0
 indicator = ProgressIndicator(100000, verbose=args.verbose)
 canonicalSS = ['GTAG', 'GCAG']
 SJdict = {}
-revCDict = {'G':'C','C':'G','T':'A','A':'T','N':'N'}
+revCDict = {'G': 'C', 'C': 'G', 'T': 'A', 'A': 'T', 'N': 'N'}
+
 def revComp(s):
-    return ''.join([revCDict[x] for x in s])[::-1]
+    return ''.join([revCDict[x.upper()] for x in s])[::-1]
     
 def junctionAdjust( cigarList, aLim ):
     """
