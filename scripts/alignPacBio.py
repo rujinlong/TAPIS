@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python
 #
 #    Align PacBio reads to reference genome and fix indels/mismatches
 #
